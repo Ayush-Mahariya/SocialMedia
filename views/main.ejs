@@ -1,0 +1,19 @@
+<%- include("partials/header"); %>
+<!--Navbar -->
+<%-include("partials/navbar", {user: user, userType: userType, isAuthenticated: isAuthenticated}); %>
+<!--MAIN BANNER AREA -->
+<%-include("partials/banner"); %>
+<!--  Intro AREA  -->
+
+<!--  ABOUT AREA  -->
+<%- include("partials/about"); %>
+
+<!--  PROFESSIONALS AREA -->
+<%- include("partials/professionals", {user: user, professionalList: professionalList, userType: userType, isAuthenticated: isAuthenticated}); %>
+
+<!--  TESTIMONIAL AREA -->
+<%- include("partials/testimonials"); %>
+
+<!--  FOOTER AREA -->
+<%- include("partials/footer"); %>
+   
